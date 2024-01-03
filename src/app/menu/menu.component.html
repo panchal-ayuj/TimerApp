@@ -1,0 +1,10 @@
+<div class="button-container">
+  <button class="timer-button" (click)="start()" >Start</button>
+  <button class="timer-button" (click)="pause()" [disabled]="!isRunning">
+    Pause
+  </button>
+  <button class="timer-button" (click)="resume()" [disabled]="isRunning">
+    Resume
+  </button>
+  <button class="timer-button" (click)="reset()">Reset</button>
+</div>
